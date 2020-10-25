@@ -34,4 +34,10 @@ public class PlantController {
                 .map(value -> new ResponseEntity<>(value, HttpStatus.OK))
                 .orElseGet(() -> new ResponseEntity<>(null, HttpStatus.NOT_FOUND));
     }
+
+    @PostMapping(consumes = "application/json")
+    @ResponseStatus(HttpStatus.CREATED)
+    public Plant addPlant(@RequestBody Plant plant) {
+        return plantRepository.save(plant);
+    }
 }

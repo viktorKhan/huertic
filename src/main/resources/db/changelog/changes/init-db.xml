@@ -1,0 +1,18 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet  id="20201025T2020"  author="viktorKhan">
+
+        <createTable tableName="plant">
+            <column name="id" type="char(32)"/>
+            <column name="family" type="varchar(255)"/>
+            <column name="species" type="varchar(255)"/>
+            <column name="variety" type="varchar(255)"/>
+            <column name="creationDate" type="date"/>
+        </createTable>
+
+    </changeSet>
+
+</databaseChangeLog>
