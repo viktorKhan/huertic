@@ -1,7 +1,7 @@
 package com.vcm.huertic.repository;
 
 import com.vcm.huertic.entity.Plant;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.PagingAndSortingRepository;
 
-public interface PlantRepository extends CrudRepository<Plant, String> {
+public interface PlantRepository extends PagingAndSortingRepository<Plant, String> {
 }
